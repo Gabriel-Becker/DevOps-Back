@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: easYpaSS1203
+      MYSQL_DATABASE: recuperacao
+      MYSQL_USER: root
+      MYSQL_PASSWORD: easYpaSS1203
+    ports:
+      - "3306:3306"
