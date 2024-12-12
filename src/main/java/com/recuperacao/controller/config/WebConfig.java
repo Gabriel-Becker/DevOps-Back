@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("https://recuperacao-front.onrender.com/") // Altere para a origem da sua aplicação
+                .allowedOrigins("https://devops-front-4r6y.onrender.com/") // Altere para a origem da sua aplicação
                                                                            // frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("Authorization"); // Adicione esta linha
